@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Welcome to hospital</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <style> 
+            body
+            {
+                background-image:url("images/abc.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height: 490px;
+            }
+            h1
+            {
+                margin-top: 20px;
+                text-align: center; 
+                color:brown; 
+                min-height:100px;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .button 
+            {
+                border-radius: 4px;
+                background-color: #814141;
+                border: none;
+                color: blue;
+                text-align: center;
+                font-size: 28px;
+                padding: 15px;
+                width: 200px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 5px;
+            }
+            .button span 
+            {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+            .button span:after
+            {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+            .button:hover span 
+            {
+                padding-right: 25px;
+            }
+            .button:hover span:after 
+            {
+                opacity: 2;
+                right: 0;
+            }
+            /* #navi
+            {
+                font-family: 'Times New Roman', Times, serif;
+                color: #814141;
+                text-decoration: none;
+                font-size: 20px;
+            } */
+            #plogin
+            {
+                font-family: 'Times New Roman', Times, serif;
+            }
+            #login
+            {
+                position: absolute;
+                left: 200px;
+                top: 410px;
+            }
+        </style> 
+    </head>
+    <body>
+            
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            
+            <ul class="navbar-nav">
+                    
+                <a class=" fas fa-clinic-medical navbar-brand" href="Index.html">Hospital</a>
+                <li class="nav-item">
+                <a class="nav-link" href="#">contact us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">about</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">leadership</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav ml-auto navbar-right">
+                <li class="nav-item"><a class="nav-link" id ="navi" href="AdminLogin.html"><span class="glyphicon glyphicon-user"></span>Admin</a></li>
+            </ul>
+            
+        </nav>
+        <h1>Welcome to hospital</h1>
+        <div id="login" class="container">
+            <span><a class="button" id="plogin" style="text-decoration: none; color:rgb(9, 4, 83);" href="PatientLogin.jsp">Paitent</a></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ 			<span><a class="button" id="plogin"style="text-decoration: none; color: rgb(9, 4, 83);" href="DoctorLogin.html">Doctor</a></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+           	<span><a class="button" id="plogin"style="text-decoration: none; color: rgb(9, 4, 83);" href="DepartmentSelection.jsp">Appointment</a></span>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    </body>
+</html>
